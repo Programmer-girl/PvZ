@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .bg{
+            background: url("img/zbg.png");
+            width:900px;
+            height: 560px;
+        }
+        #ksmx{
+            background: url("img/ksms.png");
+            background-position: top;
+            width: 331px;
+            height: 146px;
+            position: absolute;
+            left:480px;
+            top:60px;
+
+        }
+        .xyx{
+            background:url("img/jm.png");
+            background-position: top;
+            width: 313px;
+            height: 131px;
+            position: absolute;
+            left:480px;
+            top:200px;
+
+        }
+        .jm{
+            background: url("img/xyx.png");
+            background-position: top;
+            width: 286px;
+            height: 122px;
+            position: absolute;
+            left: 480px;
+            top:322px;
+
+
+        }
+        #menu{
+            background: url("img/menu.png");
+            width: 412px;
+            height: 483px;
+            position: relative;
+            top:-520px;
+            left:60px;
+            display: none;
+        }
+        .gk{
+            position: absolute;
+            left:150px;
+            top:150px;
+            color: white;
+            font-size: 24px;
+            text-decoration: none;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bg"></div>
+    <div id="ksmx"></div>
+    <div class="xyx"></div>
+    <div class="jm"></div>
+   <div id="menu"><a href="game.html" class="gk">第一关</a></div>
+</body>
+</html>
+<script>
+      function $(id){
+          return document.getElementById(id);
+      }
+      window.onload= function () {
+
+          $("ksmx").onclick=function(){
+               $("ksmx").style.backgroundPosition="bottom";
+              setTimeout(function(){
+                  $("menu").style.display="block";
+              },1000);
+
+          }
+
+      }
+</script>

@@ -66,7 +66,7 @@ function createZw(src,row,col,ist){
     document.body.appendChild(zw);//添加植物到页面当中
     if(ist)
     //调整子弹的速度 原值为2
-        createZd(zw,"img/zd.gif",10,row); //生成子弹
+        createZd(zw,"img/zd.gif",2,row); //生成子弹
 }
 /*
  * 创建子弹
@@ -138,7 +138,7 @@ function createZd(shooter,src,speed,row){//function 方法  () 方法名 createZ
                 document.body.removeChild(i);
             }
         },100);
-    },3000);//调整子弹的频率，原值为3000
+    },2000);//调整子弹的频率，原值为3000
 }
 
 /*
